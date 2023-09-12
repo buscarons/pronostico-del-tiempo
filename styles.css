@@ -1,0 +1,4 @@
+#descripcion span::first-letter{
+    text-transform:uppercase;    
+    color: red;
+}
