@@ -1,4 +1,53 @@
-#descripcion span::first-letter{
-    text-transform:uppercase;    
-    color: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #084B83;
+}
+
+form {
+    background-color: transparent;
+    border: 5px solid #42BFDD;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px;
+    width: 40%;
+}
+
+.clima {
+    border: 2px solid lightseagreen;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 40%;
+}
+
+.etiqueta {
+    display: inline-block;
+    font-weight: bold;
+    width: 110px;
+}
+
+button {
+    background-color: ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.clima p {
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 40px;
+    width: 50%
 }

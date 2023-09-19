@@ -19,10 +19,10 @@ fetch(GEO_URL)
         const contenedor = document.querySelector('.clima');
 
        contenedor.innerHTML = `
-        <p id="temp">Temperatura: ${Math.trunc(data.main.temp - 273.15)}°C</p>
-        <p id="humedad">Humedad: ${data.main.humidity}%</p>
-        <p id="descripcion">Descripcion: <span first-letter="text-transform: upperCase">${data.weather[0].description}</span></p>
-        <p id="viento">Viento: ${data.wind.speed}m/s</p>
+        <p class="temp" id="temp">Temperatura: ${Math.trunc(data.main.temp - 273.15)}°C</p>
+        <p class="humedad" id="humedad">Humedad: ${data.main.humidity}%</p>
+        <p class="descripcion" id="descripcion">Descripcion: <span first-letter="text-transform: upperCase">${data.weather[0].description}</span></p>
+        <p class="viento" id="viento">Viento: ${data.wind.speed}m/s</p>
        `
     
     })
