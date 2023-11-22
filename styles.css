@@ -1,4 +1,23 @@
-#descripcion span::first-letter{
-    text-transform:uppercase;    
-    color: red;
+.body{
+    background-color: rgb(70, 69, 69);
+}
+
+#title{
+    color: white;
+}
+
+#carta{
+    background-color: rgb(70, 69, 69);
+    border-color: white;
+}
+#title-card{
+    border-bottom-color: white;
+}
+
+#info-card{
+    border-top-color: white ;
+}
+
+.clima{
+    color: white;
 }

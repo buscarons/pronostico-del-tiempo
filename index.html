@@ -5,16 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
-    <form id="formulario" action="" class="formulario">
-        <p>Ingrese ciudad</p><input id="ciudad" type="text">
-        <button id="pron" type="submit">Obtener pronostico</button>
-    </form>
-    <div class="clima">
+<body class="body">
 
+    <div class="container alert d-none w-50">
+        <div class="alert alert-danger" role="alert">
+            La ciudad ingresada no existe o contiene un error gramatical!
+        </div>
+    </div>   
+
+    <div id="carta" class="card text-center w-50 position-absolute top-50 start-50 translate-middle">
+        <div id="title-card" class="card-header">
+          <h3 id="title">Ingrese su ciudad</h3>
+        </div>
+        <br>
+        <form id="formulario" action="" class="formulario container text-center">
+            <div class="input-group mb-3 w-50 container">
+                <input id="ciudad" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button id="pron button-addon2" class="btn btn-outline-light" type="submit">Obtener pronostico</button>
+            </div>
+        </form>
+        <div id="info-card" class="card-footer text-body-secondary text-center">
+            <br> 
+            <div class="clima">
+
+            </div>
+          
+        </div>
     </div>
 
+
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
