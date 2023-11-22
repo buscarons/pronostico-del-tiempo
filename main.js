@@ -24,18 +24,18 @@ fetch(GEO_URL)
         const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&appid=d9680d24d8bb7192b8ba4825ba5833de`
         console.log(URL)
     
-        fetch(URL)
-        .then(response => response.json())
-        .then(data => {
+    fetch(URL)
+    .then(response => response.json())
+    .then(data => {
 
+      
+       contenedor.innerHTML = `
+        <p class="temp" id="temp">Temperatura: ${Math.trunc(data.main.temp - 273.15)}°C</p>
+        <p class="humedad" id="humedad">Humedad: ${data.main.humidity}%</p>
+        <p class="descripcion" id="descripcion">Descripcion: <span first-letter="text-transform: upperCase">${data.weather[0].description}</span></p>
+        <p class="viento" id="viento">Viento: ${data.wind.speed}m/s</p>
+       `
     
-           contenedor.innerHTML = `
-            <p id="temp">Temperatura: ${Math.trunc(data.main.temp - 273.15)}°C</p>
-            <p id="humedad">Humedad: ${data.main.humidity}%</p>
-            <p id="descripcion">Descripcion: <span first-letter="text-transform: upperCase">${data.weather[0].description}</span></p>
-            <p id="viento">Viento: ${data.wind.speed}m/s</p>
-           `
-        
         })
 
     }
